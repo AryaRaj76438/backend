@@ -1,0 +1,46 @@
+HTTP: Hyper Text Transfer Protocol
+HTTP is a protocol that is used to transfer data between a client and a server. 
+HTTPs: Same as HTTP, just only difference that the data which is sent that are going to encrypted 
+:--- Operating System ----- Data Structure ---------
+URL: Location   URI: 
+URI: Uniform Resource Identifier
+HTTP-Headers: meta data -- key value sent along with request and response
+    Use: caching, authentication, manage state
+Request Header: from client
+Response Header: from client
+Representation: encoding/compression
+Payload Header: data
+
+Most common header:
+Accept: application/json
+user: agent
+authorization: bearer
+content type
+cookie
+cache-control
+
+HTTP Methods:
+GET: retrieve a resourse
+HEAD: no message body
+options: what operation are available
+TRACE: loopback test (get some data)
+DELETE: remove a resourse
+PUT: replace a resource
+PATCH: change a particular resouerce 
+POST: create a new resource
+
+Status Code: 
+1xx : Information
+2XX : Success
+3XX : Redirection
+4XX : Client Error
+5XX : Server Error
+
+100: Continue
+102: Processing
+400: Bad Request
+401: Unauthorized
+402: Payment required
+403: Forbidden
+404: Not Found
+405: Method Not Allowed

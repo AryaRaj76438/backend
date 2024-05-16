@@ -7,4 +7,4 @@ class ApiRespose{
     }
 }
 
-export {ApiResposes}
+export {ApiRespose}

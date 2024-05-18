@@ -29,66 +29,65 @@ This backend project includes features for user registration, login/logout, comm
 - Node.js
 - MongoDB
 - Cloudinary Account
+- Express
 
 ### Installation
 
 1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/backend-project.git
-cd backend-project
+-git clone https://github.com/AryaRaj76438/backend.git
+cd backend-project 
 
 2. Install Dependencies
-npm install
+`npm install`
 
 3. Create a `.env` file in the root directory and add the following environment variables:
 PORT=5000
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+- MONGO_URI=your_mongodb_uri
+- JWT_SECRET=your_jwt_secret
+- CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+- CLOUDINARY_API_KEY=your_cloudinary_api_key
+- CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
 Running the project:
-npm start
-The server will start on `http://localhost:PORT`
+- npm start
+##### The server will start on [http://localhost:PORT]
 
-API Endpoints
-
-Auth
-- POST /api/auth/register: Register a new user
+## API Endpoints
+- [Initial] (http://localhost:8000/api/v1/)
+#### Auth
+- POST /api/v1/register: Register a new user
 - POST /api/auth/login: Login a user
 - POST /api/auth/logout: Logout a user
 
-Users
-- GET /api/users/:id: Get user details
-- PUT /api/users/:id: Update user details
-- DELETE /api/users/:id: Delete a user
+#### Users
+- GET /api/v1/users/:id: Get user details
+- PUT /api/v1/users/:id: Update user details
+- DELETE /api/v1/users/:id: Delete a user
 
-Comments
-- POST /api/comments: Add a comment
-- GET /api/comments/:id: Get comments for a specific post
-- DELETE /api/comments/:id: Delete a comment
+#### Comments
+- POST /api/v1/comments: Add a comment
+- GET /api/v1/comments/:id: Get comments for a specific post
+- DELETE /api/v1/comments/:id: Delete a comment
 
-Tweets
-- POST /api/tweets: Add a tweet
-- GET /api/tweets/:id: Get tweets for a specific user
-- DELETE /api/tweets/:id: Delete a tweet
+#### Tweets
+- POST /api/v1/tweets: Add a tweet
+- GET /api/v1/tweets/:id: Get tweets for a specific user
+- DELETE /api/v1/tweets/:id: Delete a tweet
 
-Videos
-- POST /api/videos: Upload a video
-- GET /api/videos/:id: Get videos for a specific user
-- DELETE /api/videos/:id: Delete a video
+#### Videos
+- POST /api/v1/videos: Upload a video
+- GET /api/v1/videos/:id: Get videos for a specific user
+- DELETE /api/v1/videos/:id: Delete a video
 
-Subscriptions
-- POST /api/subscriptions: Subscribe to a user
-- DELETE /api/subscriptions/:id: Unsubscribe from a user
+#### Subscriptions
+- POST /api/v1/subscriptions: Subscribe to a user
+- DELETE /api/v1/subscriptions/:id: Unsubscribe from a user
 
-Subscriber Management
-- GET /api/subscribers/:id: Get subscribers for a specific user
+#### Subscriber Management
+- GET /api/v1/subscribers/:id: Get subscribers for a specific user
 
 
-### Project Structure
+## Project Structure
 backend-project/
 │
 ├── controllers/
@@ -120,4 +119,23 @@ backend-project/
 ├── .gitignore
 ├── package.json
 └── README.md
+
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [Express](https://expressjs.com/)
+- [Multer](https://github.com/expressjs/multer)
+- [Cloudinary](https://cloudinary.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Mongoose](https://mongoosejs.com/)
+- [JWT](https://jwt.io/)
+
 
